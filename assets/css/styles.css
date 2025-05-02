@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+.nav-list {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.nav-list a {
+  color: green;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.name {
+  position: fixed;
+  left: 45px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.boot {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+  background: none;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-heading {
+  color: green;
+  text-decoration: none;
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.greetings {
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
+  background: rgba(2, 63, 2, 0.6); /* Green with 50% opacity */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#typewriter {
+  font-size: 1rem;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.greetings:hover {
+  background: rgba(0, 101, 0, 0.9);
+  color: rgba(0, 230, 0, 0.9);
+  cursor: pointer;
+}
+
+.custom-contact-btn {
+  background: rgba(2, 63, 2, 0.6) !important;
+  color: green !important;
+  border: none !important;
+  font-size: 0.9rem !important;
+  margin-top: 10px !important;
+  font-family: "Roboto Mono", monospace !important;
+}
+
+.custom-contact-btn:hover {
+  background: rgba(0, 101, 0, 0.9) !important;
+  color: rgba(0, 230, 0, 0.9) !important;
+}
+
+.video {
+    position: absolute;
+    left: 600px;
+    top: 10px;
+
+}
+
+.cropped-video {
+    object-fit: cover;
+    object-position: center;
+    width: 80%;
+    max-width: 400px;
+    height: 100px;
+    aspect-ratio: 1 / 1;
+  }
+
+.page-section1 {
+    position:absolute;
+    display: block;
+    top: 100vh;
+    height: 100vh;
+}
+
+.page-section2 {
+    position:absolute;
+    display: block;
+    top: 200vh;
+    height: 100vh;
+}
+
+.page-section3 {
+    position:absolute;
+    display: block;
+    top: 300vh;
+    height: 100vh;
+}
