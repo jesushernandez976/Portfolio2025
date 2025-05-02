@@ -25,12 +25,6 @@
   </script>
 </head>
 <body>
-
-    </div>
-
-    <div class="blend2">
-
-    </div>
     
     <div class="main-container" id="main-container">
         <div class="inner-container">
@@ -52,12 +46,25 @@
                 </div>
               <div class="col-lg-6">
                 <div class="greetings" id="typewriter"></div>
-                <h1 class="custom-heading">Front-End Developer</h1>
+                
+                    <div class="stack" style="--stacks: 3;">
+                      <span style="--index: 0;">Front-End Developer</span>
+                      <span style="--index: 1;">Front-End Developer</span>
+                      <span style="--index: 2;">Front-End Developer</span>
+                    </div>
+                 
                 <p class="custom-paragraph">
                   As a passionate Front-End Developer, I specialize in crafting responsive, visually engaging, and user-friendly websites. I focus on creating interactive elements that blend seamlessly with the interface modern design. Using tools like HTML, CSS, JavaScript and many libraries/frameworks!
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn custom-contact-btn btn-lg px-4">Get in Touch</button>
+                    <a href="#" class="custom-contact-btn btn btn-lg px-4" id="style-2" data-replace="Email Me!">
+                        <span>Get in Touch</span>
+                      </a>
+
+                      <a href="#" class="custom-contact-btn btn btn-lg px-4" id="style-2" data-replace="Download!">
+                        <span>View Resume</span>
+                      </a>
+                      
                 </div>
                   
               </div>
@@ -87,7 +94,11 @@
         <div class="container">
           <!-- Title and Subtitle -->
           <div class="text-center mb-5">
-            <h1 class="about-title">About Me</h1>
+            <div class="stack custom-heading" style="--stacks: 3;">
+                <span style="--index: 0;">About Me</span>
+                <span style="--index: 1;">About Me</span>
+                <span style="--index: 2;">About Me </span>
+              </div>
             <p class="about-subtitle">My journey into programming and technology</p>
           </div>
       
@@ -95,7 +106,7 @@
           <div class="row">
             <div class="col-md-6">
               <p class="about-text">
-                I grew up in Chicago, IL, where my curiosity for technology started at an early age. I was always fascinated by how computers worked, from the hardware to the software that powers them. That curiosity quickly turned into a passion for programming, leading me to explore coding, software design, and web development in my free time.
+                Hello and Welcome to my portfolio, my name is Jesus Hernandez! I grew up in Chicago, IL, where my curiosity for technology started at an early age. I was always fascinated by how computers worked, from the hardware to the software that powers them. That curiosity quickly turned into a passion for programming, leading me to explore coding, software design, and web development in my free time.
               </p>
               <p class="about-text">
                 In 2021, I enrolled at Purdue University Global to pursue a formal education in Information Technology with a concentration in Programming and Software Development. During my time there, I developed a strong foundation in front-end, web development and problem-solving with real-world applications. I graduated in 2024 with a Bachelor of Science in Information Technology, equipped with both technical skills and a drive to create innovative digital solutions.              </p>
@@ -108,9 +119,63 @@
           </div>
         </div>
       </section>
+
+    </div>
+
+    <div class="blend2">
+
+    </div>
       
 
-    <section class="page-section2">Projects</section>
+    <section class="page-section2">
+
+        <div class="container2 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-5 py-5"> <!-- Removed flex-lg-row-reverse -->
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <div class="row g-2 gy-4  text-center">
+                        <div class="col-4">
+                          <img src="./assets/images/html.png" class="img-fluid rounded tech-icon" alt="HTML">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/css.png" class="img-fluid rounded tech-icon" alt="CSS">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/js.png" class="img-fluid rounded tech-icon" alt="JavaScript">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/github.png" class="img-fluid rounded tech-icon" alt="GitHub">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/blender.png" class="img-fluid rounded tech-icon" alt="Blender">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/figma.png" class="img-fluid rounded tech-icon" alt="Figma">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/adobe.png" class="img-fluid rounded tech-icon" alt="Adobe">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/react.png" class="img-fluid rounded tech-icon" alt="React">
+                        </div>
+                        <div class="col-4">
+                          <img src="./assets/images/Threejs.png" class="img-fluid rounded tech-icon" alt="Three.js">
+                        </div>
+                      </div>
+                      
+                  </div>
+              <div class="col-lg-6">
+                <div class="stack custom-heading" style="--stacks: 3;">
+                    <span style="--index: 0;">My Experience & Development Approach</span>
+                    <span style="--index: 1;">My Experience & Development Approach</span>
+                    <span style="--index: 2;">My Experience & Development Approach</span>
+                  </div>
+                <p class="about-text">As a front-end developer and designer, I use HTML5, CSS, and JavaScript to build responsive, interactive websites. JavaScript libraries and frameworks are incorporated when needed to enhance functionality and improve development efficiency. Three.js webGL powers real-time 3D visuals in the browser, and Blender is used to create and export custom 3D models. GitHub manages version control and collaboration, while Figma supports UI/UX design and prototyping. Microsoft 365 tools assist with documentation and workflow organization.</p>
+               
+              </div>
+            </div>
+          </div>
+          
+    </section>
     <section class="page-section3">Contact</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
