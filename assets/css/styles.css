@@ -26,6 +26,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  z-index: 5;
 }
 
 .nav-list a {
@@ -34,6 +35,11 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
   align-items: center;
+}
+
+.nav-list a:hover {
+    color: rgba(0, 230, 0, 0.9);
+
 }
 
 .name {
@@ -67,11 +73,22 @@ body {
   font-style: normal;
 }
 
+.custom-heading:hover {
+    color: rgba(0, 230, 0, 0.9);
+
+}
+
+.custom-paragraph:hover {
+    color: rgba(0, 230, 0, 0.9);
+
+}
+
+
 .greetings {
   height: 50px;
   width: 300px;
   border-radius: 15px;
-  background: rgba(2, 63, 2, 0.6); /* Green with 50% opacity */
+  background: rgba(2, 63, 2, 0.6);
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -84,12 +101,15 @@ body {
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
+  z-index: 2;
 }
 
 .greetings:hover {
   background: rgba(0, 101, 0, 0.9);
   color: rgba(0, 230, 0, 0.9);
   cursor: pointer;
+  z-index: 2;
+
 }
 
 .custom-contact-btn {
@@ -99,17 +119,23 @@ body {
   font-size: 0.9rem !important;
   margin-top: 10px !important;
   font-family: "Roboto Mono", monospace !important;
+  z-index: 2;
+
 }
 
 .custom-contact-btn:hover {
   background: rgba(0, 101, 0, 0.9) !important;
   color: rgba(0, 230, 0, 0.9) !important;
+  z-index: 2;
+
 }
 
 .video {
     position: absolute;
     left: 600px;
     top: 10px;
+    z-index: 2;
+
 
 }
 
@@ -120,13 +146,38 @@ body {
     max-width: 400px;
     height: 100px;
     aspect-ratio: 1 / 1;
+    z-index: 2;
+
+  }
+
+  .blend {
+    bottom: 0px;
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+  }
+
+  .blend2 {
+    top: 0px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
   }
 
 .page-section1 {
     position:absolute;
-    display: block;
     top: 100vh;
     height: 100vh;
+    width: 100%;
+    background: black;
+}
+
+.lead {
+    font-size: 1rem;
 }
 
 .page-section2 {

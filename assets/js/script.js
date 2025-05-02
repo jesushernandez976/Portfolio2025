@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Scene
@@ -16,6 +16,49 @@ camera.position.z = 5;
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
+const loader = new GLTFLoader();
+
+loader.load(
+    './assets/models/space_nebula.glb',
+    (gltf) => {
+      const model = gltf.scene;
+      model.scale.set(30, 30, 30);
+      model.position.set(0, 0, 0);
+      scene.add(model);
+
+  
+     
+      const bbox = new THREE.Box3().setFromObject(model);
+      const size = new THREE.Vector3();
+      const center = new THREE.Vector3();
+      bbox.getSize(size);
+      bbox.getCenter(center);
+  
+      
+      const positions = [];
+      const opacities = new Float32Array(particleCount).fill(1.0);
+      const flickerSpeeds = new Float32Array(particleCount).fill(0.04);
+  
+      for (let i = 0; i < particleCount; i++) {
+        const x = THREE.MathUtils.randFloat(center.x - size.x / 2, center.x + size.x / 2);
+        const y = THREE.MathUtils.randFloat(center.y - size.y / 2, center.y + size.y / 2);
+        const z = THREE.MathUtils.randFloat(center.z - size.z / 2, center.z + size.z / 2);
+  
+        positions.push(x, y, z);
+        opacities[i] = Math.random();
+        flickerSpeeds[i] = Math.random() * 1 + 4;
+      }
+  
+      // Update particle geometry
+      particles.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+      particles.setAttribute('alpha', new THREE.Float32BufferAttribute(opacities, 1));
+    },
+  );
+
+
+  
+  
 
 // Controls
 const controls = new OrbitControls(camera, renderer.domElement);
