@@ -8,6 +8,7 @@ body {
   font-weight: 100;
   font-style: normal;
   background: rgb(0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 
@@ -30,8 +31,10 @@ body {
   z-index: 5;
 }
 
+
+
 .nav-list a {
-  color: rgba(0, 230, 0, 0.8);
+  color: white;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
@@ -39,7 +42,7 @@ body {
 }
 
 .nav-list a:hover {
-    color: rgb(0, 230, 0);
+   
 
 }
 
@@ -56,7 +59,7 @@ body {
   left: 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: rgba(0, 230, 0, 0.8);
+  color: white;
   background: none;
   list-style: none;
   font-family: "Roboto Mono", monospace;
@@ -80,13 +83,10 @@ body {
   
   .stack {
     display: grid;
-    color: rgba(0, 230, 0, 0.8); 
+    color: white; 
     grid-template-columns: 1fr;
   }
 
-  .stack:hover {
-    color: rgb(0, 230, 0);
-  }
   
   .stack span {
     font-weight: bold;
@@ -138,10 +138,7 @@ body {
   
   
 
-.custom-paragraph:hover {
-    color: rgb(0, 230, 0);
 
-}
 
 .custom-contact-btn {
     overflow: hidden;
@@ -200,7 +197,7 @@ body {
   height: 50px;
   width: 300px;
   border-radius: 15px;
-  background: rgba(2, 63, 2, 0.6);
+  background: rgba(43, 43, 43, 0.6);
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -217,16 +214,16 @@ body {
 }
 
 .greetings:hover {
-  background: rgba(0, 101, 0, 0.9);
-  color: rgba(0, 230, 0, 0.9);
+  background: rgba(43, 43, 43, 0.6);
+  color: white;
   cursor: pointer;
   z-index: 2;
 
 }
 
 .custom-contact-btn {
-  background: rgba(2, 63, 2, 0.6) !important;
-  color: rgba(0, 230, 0, 0.8)!important;
+  background: rgba(43, 43, 43, 0.6) !important;
+  color: white !important;
   border: none !important;
   font-size: 0.9rem !important;
   margin-top: 10px !important;
@@ -236,8 +233,8 @@ body {
 }
 
 .custom-contact-btn:hover {
-  background: rgba(0, 101, 0, 0.9) !important;
-  color: rgba(0, 255, 0, 0.9) !important;
+  background: background: rgba(43, 43, 43, 0.6) !important;
+  color: white !important;
   z-index: 2;
 
 }
@@ -281,6 +278,45 @@ body {
     z-index:1;
 
   }
+
+  .learn {
+    cursor: pointer;
+  }
+
+
+  .learn a{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+    background: none;
+    list-style: none;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+    text-decoration: none;
+  }
+
+  .learn img{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 25px;
+  }
+  
+  
 
 .page-section1 {
     position:absolute;
@@ -416,4 +452,6 @@ body {
     width: 100%;
     z-index: 1;
   }
+
+
   
