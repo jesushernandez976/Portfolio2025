@@ -194,7 +194,12 @@ const messages = [
   
   type();
 
-
+  document.querySelectorAll('.project-item').forEach(item => {
+    const bg = item.getAttribute('data-bg');
+    if (bg) {
+      item.style.backgroundImage = `url(${bg})`;
+    }
+  });
 
 
 // Animation loop
