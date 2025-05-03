@@ -307,7 +307,7 @@ body {
 }
 
 .page-section2 {
-    background: linear-gradient(-45deg, white, #4476b0, purple);
+    background: linear-gradient(-45deg, grey,rgb(13, 23, 35), purple);
     background-size: 400% 400%;
     animation: gradientShift 10s ease infinite;
   }
@@ -352,10 +352,17 @@ body {
     top: 300vh;
     height: 100vh;
     width: 100%;
+    background:rgb(0, 0, 0);
 
 }
 
-.full-height {
-    min-height: 100vh;
-  }
+.blend3 {
+    top: 268vh;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+    z-index:1;
+
+}
 
