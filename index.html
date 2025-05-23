@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Goldman:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <title>Portfolio</title>
-    <style>
-        body { margin: 0; overflow-x: hidden; }
-        canvas{display:block; height: 100vh;}
-    </style>
-   <script type="importmap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Electrolize&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Goldman:wght@400;700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      display: block;
+      height: 100vh;
+    }
+  </style>
+  <script type="importmap">
     {
       "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.min.js",
@@ -24,269 +36,318 @@
     }
   </script>
 </head>
+
 <body>
-    
-    <div class="main-container" id="home">
-        <div class="inner-container">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item name" id="home"><a href="#home">Jesus Hernandez</a></li>
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#experience">Experience</a></li>
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </div>
 
-        <div class="boot container col-xxl-8">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                  
-                </div>
-              <div class="col-lg-6">
-                <div class="greetings" id="typewriter"></div>
-                
-                    <div class="stack" style="--stacks: 3;">
-                      <span style="--index: 0;">Front-End Developer</span>
-                      <span style="--index: 1;">Front-End Developer</span>
-                      <span style="--index: 2;">Front-End Developer</span>
-                    </div>
-                 
-                <p class="custom-paragraph">
-                  As a passionate Front-End Developer, I specialize in crafting responsive, visually engaging, and user-friendly websites. I focus on creating interactive elements that blend seamlessly with the interface modern design. Using tools like HTML, CSS, JavaScript and many libraries/frameworks!
-                </p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="mailto:jesushernandez976@yahoo.com" class="custom-contact-btn btn btn-lg px-4" id="style-2" data-replace="Email Me!">
-                        <span>Get in Touch</span>
-                      </a>
-                      
-                    <a href="assets/pdf/Jesus Hernandez Resume May 2025.pdf" class="custom-contact-btn btn btn-lg px-4" id="style-2" data-replace="Download!" download="Resume.pdf">
-                      <span>View Resume</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/jesus-hernandez-8a0043222/" class="custom-contact-btn btn btn-lg px-4" id="style-2" data-replace="Go to Linkedin!">
-                        <span>View Linkedin</span>
-                      </a>
-                  </div>
-                  
-              </div>
-            </div>
-          </div>
-          <div class="video">
-          <video 
-          class="d-block mx-lg-auto img-fluid cropped-video" 
-          width="100" 
-          height="100" 
-          autoplay 
-          muted 
-          loop 
-          playsinline>
-          <source src="./assets/videos/vid1.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-        </div>
-
-        
-    
+  <div class="main-container" id="home">
+    <div class="inner-container">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item name" id="home"><a href="#home">Jesus Hernandez</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="learn">
-        <a href="#about">
-          Learn More
-          <img src="./assets/images/arrow.png" alt="Arrow" class="arrow">
-        </a>
+
+    <div class="boot container col-xxl-8">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+
+        </div>
+        <div class="col-lg-6">
+          <div class="greetings" id="typewriter"></div>
+
+          <div class="stack" style="--stacks: 3;">
+            <span style="--index: 0;">Front-End Developer</span>
+            <span style="--index: 1;">Front-End Developer</span>
+            <span style="--index: 2;">Front-End Developer</span>
+          </div>
+
+          <p class="custom-paragraph">
+            As a passionate Front-End Developer, I specialize in crafting responsive, visually engaging, and
+            user-friendly websites. I focus on creating interactive elements that blend seamlessly with the interface
+            modern design. Using tools like HTML, CSS, JavaScript and many libraries/frameworks!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="mailto:jesushernandez976@yahoo.com" class="custom-contact-btn btn btn-lg px-4" id="style-2"
+              data-replace="Email Me!">
+              <span>Get in Touch</span>
+            </a>
+
+            <a href="assets/pdf/Jesus Hernandez Resume May 2025.pdf" class="custom-contact-btn btn btn-lg px-4"
+              id="style-2" data-replace="Download!" download="Resume.pdf">
+              <span>View Resume</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jesus-hernandez-8a0043222/" class="custom-contact-btn btn btn-lg px-4"
+              id="style-2" data-replace="Go to Linkedin!">
+              <span>View Linkedin</span>
+            </a>
+          </div>
+
+        </div>
       </div>
-      
-
-
-    <div class="blend">
-
+    </div>
+    <div class="video">
+      <video class="d-block mx-lg-auto img-fluid cropped-video" width="100" height="100" autoplay muted loop
+        playsinline>
+        <source src="./assets/videos/output.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <section class="page-section1 bg-black text-white py-5" id="about">
-        <div class="container">
-          <!-- Title and Subtitle -->
-          <div class="text-center mb-5">
-            <div class="stack custom-heading" style="--stacks: 3;">
-                <span style="--index: 0;">About Me</span>
-                <span style="--index: 1;">About Me</span>
-                <span style="--index: 2;">About Me </span>
-              </div>
-            <p class="about-subtitle">My journey into programming and technology</p>
-          </div>
-      
-          <!-- Two-column layout -->
-          <div class="row">
-            <div class="col-md-6">
-              <p class="about-text">
-                Hello and Welcome to my portfolio, my name is Jesus Hernandez! I grew up in Chicago, IL, where my curiosity for technology started at an early age. I was always fascinated by how computers worked, from the hardware to the software that powers them. That curiosity quickly turned into a passion for programming, leading me to explore coding, software design, and web development in my free time.
-              </p>
-              <p class="about-text">
-                In 2021, I enrolled at Purdue University Global to pursue a formal education in Information Technology with a concentration in Programming and Software Development. During my time there, I developed a strong foundation in front-end, web development and problem-solving with real-world applications.               </p>
-            </div>
-            <div class="col-md-6">
-              <p class="about-text">
-                I graduated in 2024 with a Bachelor of Science in Information Technology, equipped with both technical skills and a drive to create innovative digital solutions. Today, I continue to grow as a developer by building interactive experiences, learning new technologies, and contributing to projects that combine creativity with functionality. My journey is driven by a deep love for programming and a vision to use technology to make meaningful impact.
-              </p>
-            </div>
-          </div>
+
+
+  </div>
+  <div class="learn">
+    <a href="#about">
+      Learn More
+      <img src="./assets/images/arrow.png" alt="Arrow" class="arrow">
+    </a>
+  </div>
+
+
+
+  <div class="blend">
+
+  </div>
+
+  <section class="page-section1 bg-black text-white py-5" id="about">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="./assets/videos/1.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container">
+      <!-- Title and Subtitle -->
+      <div class="text-center mb-5">
+        <div class="stack custom-heading" style="--stacks: 3;">
+          <span style="--index: 0;">About Me</span>
+          <span style="--index: 1;">About Me</span>
+          <span style="--index: 2;">About Me </span>
         </div>
-      </section>
+        <p class="about-subtitle">My journey into programming and technology</p>
+      </div>
 
-    </div>
-
-    <div class="blend2">
-
-    </div>
-      
-
-    <section class="page-section2" id="experience">
-
-        <div class="container2 col-xxl-8 px-4 py-5">
-            <div class="row align-items-center g-5 py-5"> <!-- Removed flex-lg-row-reverse -->
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <div class="row g-2 gy-4  text-center">
-                        <div class="col-4">
-                          <img src="./assets/images/html.png" class="img-fluid rounded tech-icon" alt="HTML">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/css.png" class="img-fluid rounded tech-icon" alt="CSS">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/js.png" class="img-fluid rounded tech-icon" alt="JavaScript">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/github.png" class="img-fluid rounded tech-icon" alt="GitHub">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/blender.png" class="img-fluid rounded tech-icon" alt="Blender">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/figma.png" class="img-fluid rounded tech-icon" alt="Figma">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/adobe.png" class="img-fluid rounded tech-icon" alt="Adobe">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/react.png" class="img-fluid rounded tech-icon" alt="React">
-                        </div>
-                        <div class="col-4">
-                          <img src="./assets/images/Threejs.png" class="img-fluid rounded tech-icon" alt="Three.js">
-                        </div>
-                      </div>
-                      
-                  </div>
-              <div class="col-lg-6">
-                <div class="stack custom-heading" style="--stacks: 3;">
-                    <span style="--index: 0;">My Experience & Development Approach</span>
-                    <span style="--index: 1;">My Experience & Development Approach</span>
-                    <span style="--index: 2;">My Experience & Development Approach</span>
-                  </div>
-                <p class="about-text">As a front-end developer and designer, I use HTML5, CSS, and JavaScript to build responsive, interactive websites. JavaScript libraries and frameworks are incorporated when needed to enhance functionality and improve development efficiency. Three.js webGL powers real-time 3D visuals in the browser, and Blender is used to create and export custom 3D models. GitHub manages version control and collaboration, while Figma supports UI/UX design and prototyping. Microsoft 365 tools assist with documentation and workflow organization.</p>
-               
-              </div>
-            </div>
-          </div>
-          
-    </section>
-
-    <div class="blend3">
-
-    </div>
-    <section class="page-section3" id ="projects">
-        <div class="text-center">
-            <div class="stack custom-heading" style="--stacks: 3;">
-                <span style="--index: 0;">Projects</span>
-                <span style="--index: 1;">Projects</span>
-                <span style="--index: 2;">Projects</span>
-              </div>
-          </div>
-
-        <div class=" d-flex flex-column flex-md-row p-5 gap-5 py-md-5 align-items-center justify-content-center min-vh-100">
-          <div class="list-group w-100" style="max-width: 1000px;">
-      
-           <!-- Project 1 -->
-           <a href="https://jesushernandez976.github.io/Room2/" class="project-item"data-bg="./assets/images/acp4.jpg">
-            <img src="./assets/images/acp2.jpg" alt="Project 1" width="100" height="100" class="rounded flex-shrink-0">
-            <div class="project-content">
-              <div>
-                <h4 class="mb-2 fw-bold">Access Code Programming website</h4>
-                <p class="">
-                    This website is a fully interactive 3D experience built with Three.js and WebGL, optimized for both desktop and mobile devices. Users can explore a virtual room featuring dynamic camera navigation, clickable objects, real-time lighting, and spatial audio. The scene showcases web development, 3D modeling, and JavaScript integration—demonstrating the use of scene graphs, animation loops, raycasting for interactivity, and responsive design. The entire environment was custom-built to represent Access Code's creative and technical capabilities across all screen sizes.
-                  </p>
-                  <p>
-                    HTML, CSS,  JavaScript, Three.js, Vite, Blender, AWS Cloudfront, Adobe Suite 
-                  </p>
-                </div>
-              <small class="text-light">Live</small>
-            </div>
-          </a>
-          
-          <a href="https://jesushernandez976.github.io/Room2/room.html" class="project-item" data-bg="./assets/images/metaworld3.png">
-            <img src="./assets/images/metaworld4.png" alt="Project 2" width="100" height="100" class="rounded flex-shrink-0">
-            <div class="project-content">
-              <div>
-                <h4 class="mb-2 fw-bold">Metaworld</h4>
-                <p class="">
-                    MetaWorld is an interactive 3D portfolio room built using Three.js and WebGL. It immerses users in a fully navigable environment that showcases work and links in a spatial, game-like interface. Designed for both desktop and mobile, MetaWorld features animated camera paths, clickable hotspots, and real-time scene transitions. Developed with performance optimization, responsive design, and intuitive controls, it brings immersive storytelling to the web.
-                  </p>
-                   <p>
-                    HTML, CSS,  JavaScript, Three.js, Blender, AWS Cloudfront, Adobe Suite 
-                  </p>             
-                </div>
-              <small class="text-light">Beta</small>
-            </div>
-          </a>
-          
-          <a href="https://jesushernandez976.github.io/darkeye/" class="project-item" data-bg="./assets/images/darkeye.png">
-            <img src="./assets/images/darkeye.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
-            <div class="project-content">
-              <div>
-                <h4 class="mb-2 fw-bold">Darkeye.io</h4>
-                <p class="">Darkeye is an immersive web-based experience showcases my expertise in Three.js, GLSL effects, and animated user interfaces. I designed a real-time 3D scene featuring a glowing, animated GLB model, a neon-style environment, and a smooth camera animation powered by GSAP. Users interact with a data field interface where they can filter by attributes like username, IP address, wallet info, and more, reflecting a simulated cyber data tracking tool. I integrated responsive controls, loading animations, and dynamic field selection logic using JavaScript and DOM manipulation.</p>
-                 <p>
-                    HTML, CSS,  JavaScript, Three.js, Blender, Vite, AWS Cloudfront
-                  </p> 
-              </div>
-              <small class="text-light">Beta</small>
-            </div>
-          </a>
-
-           <a href="" class="project-item" data-bg="./assets/images/Breach-House.png">
-            <img src="./assets/images/breach.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
-            <div class="project-content">
-              <div>
-                <h4 class="mb-2 fw-bold">Breach-House</h4>
-                <p class="">Breach-House is an interactive cyber attack tracker built as a collaborative project with a team of developers. Designed to visualize live and simulated breach data in a 3D environment, this experience immerses users in a futuristic security operations room. Developed using Three.js, GSAP, and layered HTML/CSS interfaces, the environment features real-time visualizations of attack paths, breach logs, and threat levels. Users can navigate through the scene using dynamic camera transitions triggered by clickable markers, explore interactive consoles, and engage with elements that simulate the flow of a cyber attack. </p>
-                <p>
-                  HTML, CSS,  JavaScript, Three.js, Blender, Vite, AWS Cloudfront, Python, Node.js
-                </p> 
-              </div>
-              <small class="text-light">Beta</small>
-            </div>
-          </a>
-           <a href="https://jesushernandez976.github.io/NarrifyPlus/" class="project-item" data-bg="./assets/images/narrify.png">
-            <img src="./assets/images/Narrify.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
-            <div class="project-content">
-              <div>
-                <h4 class="mb-2 fw-bold">Narrify</h4>
-                <p class="">Narrify is an accessibility-focused web application designed to turn written content into immersive audio experiences. Built to support users who struggle with reading, such as individuals with dyslexia, ADHD, or visual impairments. Narrify allows users to upload PDFs and have the content read aloud in a clean, distraction free interface. This project combines file handling, text extraction, and text-to-speech technology, giving users a seamless way to engage with documents in audio form.</p>
-                <p>
-                  HTML, CSS,  JavaScript
-                </p> 
-              </div>
-              <small class="text-light">In Dev</small>
-            </div>
-          </a>
-          
-      
-          </div>
+      <!-- Two-column layout -->
+      <div class="row">
+        <div class="col-md-6">
+          <p class="about-text">
+            Hello and Welcome to my portfolio, my name is Jesus Hernandez! I grew up in Chicago, IL, where my curiosity
+            for technology started at an early age. I was always fascinated by how computers worked, from the hardware
+            to the software that powers them. That curiosity quickly turned into a passion for programming, leading me
+            to explore coding, software design, and web development in my free time.
+          </p>
+          <p class="about-text">
+            In 2021, I enrolled at Purdue University Global to pursue a formal education in Information Technology with
+            a concentration in Programming and Software Development. During my time there, I developed a strong
+            foundation in front-end, web development and problem-solving with real-world applications. </p>
         </div>
-      </section>
-      
-    
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script type="module" src=./assets/js/script.js></script>
+        <div class="col-md-6">
+          <p class="about-text">
+            I graduated in 2024 with a Bachelor of Science in Information Technology, equipped with both technical
+            skills and a drive to create innovative digital solutions. Today, I continue to grow as a developer by
+            building interactive experiences, learning new technologies, and contributing to projects that combine
+            creativity with functionality. My journey is driven by a deep love for programming and a vision to use
+            technology to make meaningful impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="blend2">
+
+  </div>
+
+
+  <section class="page-section2" id="experience">
+
+    <div class="container2 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-5 py-5"> <!-- Removed flex-lg-row-reverse -->
+        <div class="col-10 col-sm-8 col-lg-6">
+          <div class="row g-2 gy-4  text-center">
+            <div class="col-4">
+              <img src="./assets/images/html.png" class="img-fluid rounded tech-icon" alt="HTML">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/css.png" class="img-fluid rounded tech-icon" alt="CSS">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/js.png" class="img-fluid rounded tech-icon" alt="JavaScript">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/github.png" class="img-fluid rounded tech-icon" alt="GitHub">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/blender.png" class="img-fluid rounded tech-icon" alt="Blender">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/figma.png" class="img-fluid rounded tech-icon" alt="Figma">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/adobe.png" class="img-fluid rounded tech-icon" alt="Adobe">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/react.png" class="img-fluid rounded tech-icon" alt="React">
+            </div>
+            <div class="col-4">
+              <img src="./assets/images/Threejs.png" class="img-fluid rounded tech-icon" alt="Three.js">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="stack custom-heading" style="--stacks: 3;">
+            <span style="--index: 0;">My Experience & Development Approach</span>
+            <span style="--index: 1;">My Experience & Development Approach</span>
+            <span style="--index: 2;">My Experience & Development Approach</span>
+          </div>
+          <p class="about-text">As a front-end developer and designer, I use HTML5, CSS, and JavaScript to build
+            responsive, interactive websites. JavaScript libraries and frameworks are incorporated when needed to
+            enhance functionality and improve development efficiency. Three.js webGL powers real-time 3D visuals in the
+            browser, and Blender is used to create and export custom 3D models. GitHub manages version control and
+            collaboration, while Figma supports UI/UX design and prototyping. Microsoft 365 tools assist with
+            documentation and workflow organization.</p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="blend3">
+
+  </div>
+  <section class="page-section3" id="projects">
+    <div class="text-center">
+      <div class="stack custom-heading" style="--stacks: 3;">
+        <span style="--index: 0;">Projects</span>
+        <span style="--index: 1;">Projects</span>
+        <span style="--index: 2;">Projects</span>
+      </div>
+    </div>
+
+    <div class=" d-flex flex-column flex-md-row p-5 gap-5 py-md-5 align-items-center justify-content-center min-vh-100">
+      <div class="list-group w-100" style="max-width: 1000px;">
+
+        <!-- Project 1 -->
+        <a href="https://jesushernandez976.github.io/Room2/" class="project-item" data-bg="./assets/images/acp4.jpg">
+          <img src="./assets/images/acp2.jpg" alt="Project 1" width="100" height="100" class="rounded flex-shrink-0">
+          <div class="project-content">
+            <div>
+              <h4 class="mb-2 fw-bold">Access Code Programming website</h4>
+              <p class="">
+                This website is a fully interactive 3D experience built with Three.js and WebGL, optimized for both
+                desktop and mobile devices. Users can explore a virtual room featuring dynamic camera navigation,
+                clickable objects, real-time lighting, and spatial audio. The scene showcases web development, 3D
+                modeling, and JavaScript integration—demonstrating the use of scene graphs, animation loops, raycasting
+                for interactivity, and responsive design. The entire environment was custom-built to represent Access
+                Code's creative and technical capabilities across all screen sizes.
+              </p>
+              <p>
+                HTML, CSS, JavaScript, Three.js, Vite, Blender, AWS Cloudfront, Adobe Suite
+              </p>
+            </div>
+            <small class="text-light">Live</small>
+          </div>
+        </a>
+
+        <a href="https://jesushernandez976.github.io/Room2/room.html" class="project-item"
+          data-bg="./assets/images/metaworld3.png">
+          <img src="./assets/images/metaworld4.png" alt="Project 2" width="100" height="100"
+            class="rounded flex-shrink-0">
+          <div class="project-content">
+            <div>
+              <h4 class="mb-2 fw-bold">Metaworld</h4>
+              <p class="">
+                MetaWorld is an interactive 3D portfolio room built using Three.js and WebGL. It immerses users in a
+                fully navigable environment that showcases work and links in a spatial, game-like interface. Designed
+                for both desktop and mobile, MetaWorld features animated camera paths, clickable hotspots, and real-time
+                scene transitions. Developed with performance optimization, responsive design, and intuitive controls,
+                it brings immersive storytelling to the web.
+              </p>
+              <p>
+                HTML, CSS, JavaScript, Three.js, Blender, AWS Cloudfront, Adobe Suite
+              </p>
+            </div>
+            <small class="text-light">Beta</small>
+          </div>
+        </a>
+
+        <a href="https://jesushernandez976.github.io/darkeye/" class="project-item"
+          data-bg="./assets/images/darkeye.png">
+          <img src="./assets/images/darkeye.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
+          <div class="project-content">
+            <div>
+              <h4 class="mb-2 fw-bold">Darkeye.io</h4>
+              <p class="">Darkeye is an immersive web-based experience showcases my expertise in Three.js, GLSL effects,
+                and animated user interfaces. I designed a real-time 3D scene featuring a glowing, animated GLB model, a
+                neon-style environment, and a smooth camera animation powered by GSAP. Users interact with a data field
+                interface where they can filter by attributes like username, IP address, wallet info, and more,
+                reflecting a simulated cyber data tracking tool. I integrated responsive controls, loading animations,
+                and dynamic field selection logic using JavaScript and DOM manipulation.</p>
+              <p>
+                HTML, CSS, JavaScript, Three.js, Blender, Vite, AWS Cloudfront
+              </p>
+            </div>
+            <small class="text-light">Beta</small>
+          </div>
+        </a>
+
+        <a href="" class="project-item" data-bg="./assets/images/Breach-House.png">
+          <img src="./assets/images/breach.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
+          <div class="project-content">
+            <div>
+              <h4 class="mb-2 fw-bold">Breach-House</h4>
+              <p class="">Breach-House is an interactive cyber attack tracker built as a collaborative project with a
+                team of developers. Designed to visualize live and simulated breach data in a 3D environment, this
+                experience immerses users in a futuristic security operations room. Developed using Three.js, GSAP, and
+                layered HTML/CSS interfaces, the environment features real-time visualizations of attack paths, breach
+                logs, and threat levels. Users can navigate through the scene using dynamic camera transitions triggered
+                by clickable markers, explore interactive consoles, and engage with elements that simulate the flow of a
+                cyber attack. </p>
+              <p>
+                HTML, CSS, JavaScript, Three.js, Blender, Vite, AWS Cloudfront, Python, Node.js
+              </p>
+            </div>
+            <small class="text-light">Beta</small>
+          </div>
+        </a>
+        <a href="https://jesushernandez976.github.io/NarrifyPlus/" class="project-item"
+          data-bg="./assets/images/narrify.png">
+          <img src="./assets/images/Narrify.png" alt="Project 3" width="100" height="100" class="rounded flex-shrink-0">
+          <div class="project-content">
+            <div>
+              <h4 class="mb-2 fw-bold">Narrify</h4>
+              <p class="">Narrify is an accessibility-focused web application designed to turn written content into
+                immersive audio experiences. Built to support users who struggle with reading, such as individuals with
+                dyslexia, ADHD, or visual impairments. Narrify allows users to upload PDFs and have the content read
+                aloud in a clean, distraction free interface. This project combines file handling, text extraction, and
+                text-to-speech technology, giving users a seamless way to engage with documents in audio form.</p>
+              <p>
+                HTML, CSS, JavaScript
+              </p>
+            </div>
+            <small class="text-light">In Dev</small>
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script type="module" src=./assets/js/script.js></script>
 </body>
+
 </html>
